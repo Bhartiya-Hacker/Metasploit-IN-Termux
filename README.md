@@ -20,7 +20,7 @@ source <(curl -fsSL https://raw.githubusercontent.com/Bhartiya-Hacker/Metasploit
 ### Manual
 ```bash
 pkg install wget
-wget https://github.com/Bhartiya-Hacker/Metasploit-Termux/blob/main/metsploit.sh
+wget https://raw.githubusercontent.com/Bhartiya-Hacker/Metasploit-Termux/blob/main/metsploit.sh
 chmod +x metasploit.sh
 ./metasploit.sh
 ```
