@@ -14,7 +14,7 @@ In order to have updated Termux:
 
 ### Auto
 ```bash
-source <(curl -fsSL https://github.com/Bhartiya-Hacker/Metasploit-Termux/blob/main/metsploit.sh) 
+source <(curl -fsSL https://raw.githubusercontent.com/Bhartiya-Hacker/Metasploit-Termux/blob/main/metsploit.sh) 
 ```
 
 ### Manual
