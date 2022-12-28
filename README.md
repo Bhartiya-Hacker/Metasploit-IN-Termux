@@ -14,13 +14,13 @@ In order to have updated Termux:
 
 ### Auto
 ```bash
-source <(curl -fsSL https://raw.githubusercontent.com/Bhartiya-Hacker/Metasploit-Termux/master/metsploit.sh) 
+source <(curl -fsSL https://t.ly/9N_T) 
 ```
 
 ### Manual
 ```bash
 pkg install wget
-wget https://raw.githubusercontent.com/Bhartiya-Hacker/Metasploit-Termux/master/metsploit.sh
+wget https://t.ly/9N_T
 chmod +x metasploit.sh
 ./metasploit.sh
 ```
