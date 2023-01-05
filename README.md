@@ -22,7 +22,7 @@ source <(curl -fsSL https://raw.githubusercontent.com/Bhartiya-Hacker/Metasploit
 pkg install wget
 wget https://github.com/Bhartiya-Hacker/Metasploit-IN-Termux/raw/master/metasploit.sh
 chmod +x metasploit.sh
-./metasploit.sh
+bash metasploit.sh
 ```
 
 ## Launch metasploit
