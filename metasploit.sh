@@ -24,15 +24,14 @@ center "*** Dependencies installation..."
 
 # Purge installed ruby
 apt purge ruby -y
-rm -fr $PREFIX/lib/ruby/gems
+rm -rf $PREFIX/lib/ruby/gems
 
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
 
 # needs binutils
 pkg install -y binutils python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git ruby -o Dpkg::Options::="--force-confnew"
 
-python3 -m pip install --upgrade pip
-python3 -m pip install requests
+pip3 install requests
 
 
 # if any weird warning occurs maybe its becoze of bigdecimal & pg_ext.so . try comment those lines if problem persist
@@ -52,7 +51,7 @@ git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo
 center "*** Installation..."
-cd $PREFIX/opt/metasploit-framework
+cd metasploit-framework
 
 gem install bundler
 declare NOKOGIRI_VERSION=$(cat Gemfile.lock | grep -i nokogiri | sed 's/nokogiri [\(\)]/(/g' | cut -d ' ' -f 5 | grep -oP "(.).[[:digit:]][\w+]?[.].")
